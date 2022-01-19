@@ -32,7 +32,11 @@ nav,
 }
 
 .nav-item {
-    padding: 0rem .5rem;
+    padding: 0rem .75rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
 }
 
 #header-section {
@@ -40,6 +44,7 @@ nav,
     flex-direction: row;
     align-items: center;
     background: #e5e5e5;
+    /* max-height: 95vh; */
 }
 
 #header-section .col-md-5 {
@@ -66,6 +71,63 @@ nav,
 
 .services-container {
     margin-top: 5rem;
+}
+
+.services-container .services-cards .card {
+    padding: 3rem 1.5rem;
+}
+
+.card .card-img-top {
+    width: 20%;
+    align-self: center;
+}
+
+.card-body h3 {
+    color: #f98c23;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 1.25rem 0rem 0.25rem 0rem;
+}
+
+.card-text {
+    font-size: 18px;
+    line-height: 1.25rem;
+}
+
+.orange-arrow {
+    width: 40px !important;
+}
+
+.light-card {
+    background-color: #eeeeee;
+}
+
+.dark-card {
+    background-color: #e5e5e5;
+}
+
+.ignite-card img {
+    width: 105px;
+}
+
+.cross-card img {
+    width: 75px;
+}
+
+.forged-card img {
+    width: 110px;
+}
+
+.excalibur-card img {
+    width: 140px;
+}
+
+.strike-card img {
+    width: 115px;
+}
+
+.contact-card img {
+    width: 75px;
 }
 
 @media screen and (max-width:991px) {
