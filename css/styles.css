@@ -44,7 +44,6 @@ nav,
     flex-direction: row;
     align-items: center;
     background: #e5e5e5;
-    /* max-height: 95vh; */
 }
 
 #header-section .col-md-5 {
@@ -106,28 +105,29 @@ nav,
     background-color: #e5e5e5;
 }
 
-.ignite-card img {
-    width: 105px;
+#cross-card img {
+    width: 60px;
 }
 
-.cross-card img {
-    width: 75px;
+#forged-card img {
+    width: 85px;
 }
 
-.forged-card img {
-    width: 110px;
+#strike-card img {
+    width: 95px;
 }
 
-.excalibur-card img {
-    width: 140px;
+#excalibur-card img {
+    width: 100px;
 }
 
-.strike-card img {
-    width: 115px;
-}
 
-.contact-card img {
-    width: 75px;
+/* #ignite-card img {
+    width: 95px;
+} */
+
+#contact-card img {
+    width: 65px;
 }
 
 @media screen and (max-width:991px) {
@@ -144,5 +144,57 @@ nav,
     }
     .navbar-collapse {
         background: #f98c23;
+    }
+    #header-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: #e5e5e5;
+        padding: 0rem!important;
+        /* height: 90vh; */
+    }
+    #header-section .col-md-5 {
+        padding: 3rem 1rem 6rem 1rem;
+    }
+    .heading {
+        font-size: 32px;
+        font-weight: 700;
+        color: #f98c23;
+        padding: 3rem 1rem 1rem 1rem;
+    }
+    .subheading {
+        font-size: 18px;
+        padding: 0rem 2.5rem 1rem 2.5rem;
+    }
+    .join-now {
+        background: #f98c23;
+        font-weight: bold;
+        font-size: 18px;
+        color: #ffffff;
+        padding: 1rem 2rem;
+    }
+    .services-container {
+        padding: 1rem 0.5rem;
+    }
+    .services-container h1 {
+        text-align: center;
+        font-weight: 700;
+    }
+    .services-container .services-cards .card {
+        padding: 2.5rem 0.5rem;
+    }
+    .card-body h3 {
+        color: #f98c23;
+        font-weight: 700;
+        font-size: 28px;
+        padding: 1.25rem 0rem 0.25rem 0rem;
+    }
+    .card-text {
+        font-size: 16px;
+        line-height: 1.25rem;
+    }
+    .orange-arrow {
+        width: 40px !important;
     }
 }
