@@ -1,11 +1,17 @@
 body {
     font-family: 'Hind', sans-serif;
+    padding-top: 50px;
 }
 
 nav,
 .navbar,
 .navbar-expand {
     padding: 0;
+}
+
+.navbar {
+    background: #ffffff;
+    border-bottom: 2px solid #eeeeee;
 }
 
 .brand-container,
@@ -18,7 +24,7 @@ nav,
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #525252;
+    color: #000000;
     font-size: 20px;
 }
 
@@ -32,7 +38,7 @@ nav,
 }
 
 .nav-item {
-    padding: 0rem .75rem;
+    padding: 0.20rem 1rem 0rem 1rem;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -62,32 +68,33 @@ nav,
 
 .join-now {
     background: #f98c23;
-    font-weight: bold;
-    font-size: 32px;
+    font-weight: 600;
+    font-size: 24px;
     color: #ffffff;
-    padding: 1rem 2rem 0.5rem 2rem;
+    padding: 1rem 2rem 0.75rem 2rem;
 }
 
-.services-container {
+.section {
     margin-top: 10rem;
-    padding: 0rem 7.5rem;
 }
 
-.services-container h1 {
+.section-heading {
     font-size: 48px;
     text-align: center;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     padding: 1.5rem 0rem;
     color: #525252;
 }
 
-.services-container .services-cards .card {
-    padding: 3rem 1.5rem;
+.services-cards,
+.memberships-cards,
+.reviews-section {
+    justify-content: center;
 }
 
-.card {
-    min-height: 400px;
-    /* min-width: 345px; */
+.services-container .services-cards .card {
+    padding: 3rem 2rem;
+    min-height: 425px;
 }
 
 .card .card-img-top {
@@ -98,13 +105,14 @@ nav,
 .card-body h3 {
     color: #f98c23;
     font-weight: 700;
-    font-size: 32px;
-    padding: 1.25rem 0rem 0.25rem 0rem;
+    font-size: 36px;
+    padding: 1rem 0rem;
 }
 
 .card-text {
     font-size: 18px;
     line-height: 1.25rem;
+    padding: 0rem 0.75rem;
 }
 
 .orange-arrow {
@@ -165,6 +173,57 @@ nav,
     padding: 10rem;
 }
 
+.memberships-cards .card {
+    max-width: 400px;
+    min-height: 475px;
+    margin: 0.5rem;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p.card-heading {
+    background: #f98c23;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 0.5rem;
+    margin: 0;
+}
+
+.memberships-cards .card .card-body .card-title {
+    padding: 1rem;
+}
+
+.memberships-cards .card .card-body .card-text {
+    padding: 1rem 1.5rem;
+}
+
+.reviews-section {
+    background: #e5e5e5;
+}
+
+.reviews-section .container {
+    padding: 5rem 0rem;
+}
+
+.news-section {
+    margin-top: 10rem;
+}
+
+.news-images img {
+    max-width: 400px;
+}
+
+.footer-section {
+    background: #eeeeee;
+}
+
+.footer-section .container {
+    padding: 5rem 2.5rem;
+    color: #525252 !important;
+    font-size: 18px;
+}
+
 @media screen and (max-width:991px) {
     #navbarCollapse ul {
         text-align: center;
@@ -201,6 +260,7 @@ nav,
     .subheading {
         font-size: 18px;
         padding: 0rem 2.5rem 1rem 2.5rem;
+        line-height: 1.25rem;
     }
     .join-now {
         background: #f98c23;
@@ -209,9 +269,17 @@ nav,
         color: #ffffff;
         padding: 1rem 2rem;
     }
-    .services-container {
+    .section {
         margin-top: 5rem;
-        padding: 0rem 1.5rem;
+        padding: 0rem 2rem;
+    }
+    .section-heading {
+        font-size: 32px;
+        text-align: center;
+        padding: 0.5rem 0rem;
+    }
+    .services-container {
+        margin-bottom: 2.5rem;
     }
     .services-container h1 {
         text-align: center;
@@ -220,24 +288,36 @@ nav,
     }
     .services-container .services-cards .card {
         padding: 2.5rem 0.5rem;
+        min-height: 350px;
     }
     .card {
         min-height: 350px;
     }
     .card-body h3 {
-        color: #f98c23;
-        font-weight: 700;
         font-size: 24px;
-        padding: 1.25rem 0rem 0.25rem 0rem;
     }
     .card-text {
         font-size: 16px;
         line-height: 1.25rem;
     }
-    .orange-arrow {
-        width: 25px !important;
-    }
     .responsive-iframe {
-        padding: 2.5rem;
+        padding: 1.25rem;
+    }
+    .memberships-cards .card {
+        min-width: 300px;
+        min-height: auto;
+        max-height: 450px;
+    }
+    .memberships-cards .card .card-body .card-text {
+        padding: 1rem;
+    }
+    .reviews-section {
+        padding: 0;
+    }
+    .news-section {
+        margin-top: 5rem;
+    }
+    .news-images img {
+        max-width: 350px;
     }
 }
