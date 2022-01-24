@@ -219,9 +219,15 @@ p.card-heading {
 }
 
 .footer-section .container {
-    padding: 5rem 2.5rem;
+    padding: 2.5rem;
     color: #525252 !important;
     font-size: 18px;
+    text-align: center;
+}
+
+footer img {
+    width: 500px;
+    padding: 1rem 0rem;
 }
 
 @media screen and (max-width:991px) {
